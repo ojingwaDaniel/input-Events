@@ -19,3 +19,10 @@ for (let input of [username,terms,selected]) {
 
     })
 }
+for (let input of [username, terms, selected]) {
+  input.addEventListener("input", ({ target }) => {
+    const { name, value, checked, type } = target;
+    information[name] = type == "checkbox" ? checked : value;
+    console.log(information);
+  });
+}
