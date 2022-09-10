@@ -9,7 +9,7 @@ form.addEventListener('submit',function(e){
     console.log('TermsResponse :' ,terms.checked)
     console.log('selected Club :' ,selectClub.value)
 })
-//using input events and change
+//using  change event
 let information= {}
 for (let input of [username,terms,selected]) {
     input.addEventListener('change',({target})=>{
@@ -19,6 +19,7 @@ for (let input of [username,terms,selected]) {
 
     })
 }
+// using input event
 for (let input of [username, terms, selected]) {
   input.addEventListener("input", ({ target }) => {
     const { name, value, checked, type } = target;
