@@ -4,7 +4,7 @@ let terms = document.querySelector('#terms')
 let selected = document.querySelector('#clubs')
 let selectClub = document.querySelector("#clubs");
 form.addEventListener('submit',function(e){
-    e.preventDefault()
+    e.preventDefault() //to stop dey page from refreshing
     console.log('username :' ,username.value)
     console.log('TermsResponse :' ,terms.checked)
     console.log('selected Club :' ,selectClub.value)
